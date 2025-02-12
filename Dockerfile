@@ -43,7 +43,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 # Clone the SimGrid repository with submodules
-RUN git clone --recursive https://github.com/simgrid/simgrid.git /opt/simgrid
+RUN git clone --recursive git@github.com:aljozu/simgrid_fmu.git /opt/simgrid
 
 # Build and install SimGrid using Ninja
 RUN cd /opt/simgrid \
